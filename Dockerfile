@@ -9,7 +9,7 @@ LABEL version="${VERSION}"
 
 RUN \
   apt-get update && \
-  apt-get install -y xvfb x11vnc && \
+  apt-get install -y xvfb x11vnc net-tools && \
   rm -fr /var/lib/apt/lists/*
 
 RUN \
